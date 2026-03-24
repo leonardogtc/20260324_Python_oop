@@ -14,27 +14,19 @@ class Pessoa:
 
 
 class Pessoa():
-    ...  # código da classe
+    def __init__(self, nome, sobrenome, idade):
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.idade = idade
 
 
-p1 = Pessoa()
-p1.nome = 'Leonardo'
-p1.idade = 22
+p1 = Pessoa('Leonardo', 'Silva', 22)
+p2 = Pessoa('Maria', 'Santos', 30)
 
 print(p1)
 print(p1.nome)
 print(p1.idade)
 
-p2 = Pessoa()
-p2.nome = 'Maria'
-p2.idade = 30
-
 print(p2)
 print(p2.nome)
 print(p2.idade)
-
-
-
-string = 'Leonardo'
-print(string.upper())
-print(isinstance(string, str))
